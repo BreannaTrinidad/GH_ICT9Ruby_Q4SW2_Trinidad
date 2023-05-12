@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Javascript Time Converter</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+	<center><h1>Minutes to Seconds</h1></center>
+	 <form>
+        <input type="number" id="minInput" class="form-control" name="minInput"><br>
+        <center><button type="button" class="btn btn-success" onclick="convertToSec()">Convert to Seconds</button>
+      </form>  
+      <br>
+      <p id="secOutput"></p>
+    <script>
+      function convertToSec() {
+        var min = document.getElementById('minInput').value;
+        var multiplication = min * 60;
+        document.getElementById('secOutput').innerHTML = multiplication + ' Seconds';
+      }
+  </script>
+<br><br>
+	<h1>Minutes to Hours</h1>
+	<form>
+      <input type="number" id="min2Input" class="form-control" name="min2Input"><br>
+       <center><button type="button" class="btn btn-success" onclick="convertToHour()">Convert to Hours</button></center>
+      </form>  
+      <br>
+      <p id="hourOutput"></p>
+    <script>
+      function convertToHour() {
+        var min = document.getElementById('min2Input').value;
+        var division = min / 60;
+        document.getElementById('hourOutput').innerHTML = division + ' Hours';
+      }
+  </script>
+  <br><br>
+	<h1>Minutes to Days</h1>
+	<form>
+      <input type="number" id="min3Input" class="form-control" name="min3Input"><br>
+       <center><button type="button" class="btn btn-success" onclick="convertToDay()">Convert to Days</button></center>
+      </form>  
+      <br>
+      <p id="dayOutput"></p>
+    <script>
+      function convertToDay() {
+        var min = document.getElementById('min3Input').value;
+        var division = min / 1440;
+        document.getElementById('dayOutput').innerHTML = division + ' Days';
+      }
+  </script> 
+</body>
+</body>
+</html> 
